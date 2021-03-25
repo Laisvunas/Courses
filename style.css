@@ -1,0 +1,111 @@
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+.hero {
+    padding: 0.6rem;
+    border-bottom: solid 3px #48c78e;
+}
+
+.hero div {
+    text-align: center;
+    
+}
+
+.hero div img {
+    height: 35px;
+    margin-bottom: 0.2rem;
+}
+
+button {
+    border: 0;
+    padding: 0.5rem 1.5rem;
+    font-size: 90%;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    outline-width: 0;
+}
+
+button:hover {
+    background: #eee;  
+}
+
+button.primary {
+    background-color: #48c78e;
+    color: white;
+}
+
+h1 {
+    color: #48c78e;
+    font-weight: normal;
+    margin: 1rem 0;
+    font-size: 1.5rem
+}
+
+section.main {
+    margin: 0 1.5rem;
+}
+
+div.notification {
+background-color: #f5f5f5;
+padding: 1.5rem;
+position: relative;
+margin-bottom: 0.5rem;
+border-radius: 3px;
+}
+
+#close_button {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor:pointer;
+    background-image: url(img/x-mark_grey.png);
+}
+
+#close_button:hover {
+    background-image: url(img/x-mark_red.png);
+} 
+
+label {
+    display: block;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border: solid #f5f5f5 2px;
+    border-radius: 3px;
+}
+
+form div {
+    text-align: right;
+    margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px)  {
+    
+    section.main {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        padding-top: 0.9rem;
+    }
+
+    div.container {
+        max-width: 1024px;
+        margin: 0 auto;
+        display:flex;
+        justify-content: space-between; 
+    }
+
+    
+
+}
