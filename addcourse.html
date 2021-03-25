@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Course</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <div>
+                <a href="#"><img src="img/Google_logo.png"></a>
+                </div> 
+            <div>
+                <button>Dashboard</button> <button class="primary">Logout</button>
+            </div>
+        </div> 
+    </section>
+
+    <section class="main">
+
+        <h1>Add a Course</h1>
+        <div class="notification">Your course has been added successfully <div id="close_button"></div></div>
+
+        <form name="add-course">
+
+            <label for="email"><strong>Course Name</strong></label>
+            <input class="input"
+            type="text"
+            name="course-name"
+            id="course-name"
+            placeholder="Something coool"
+            minlength="3"
+            maxlength="255"
+            required >
+
+            <label for="image"><strong>Image</strong></label>
+            <input class="input"
+            type="url"
+            name="image"
+            id="image"
+            placeholder="http://image.png"
+            required >
+
+            <div id="prices">
+
+                <div>
+
+                    <label for="old-price"><strong>Old Price (Eur)</strong></label>
+                    <input class="input"
+                    type="number"
+                    name="old-price"
+                    id="old-price"
+                    placeholder="50"
+                    min="1"
+                    max="100"
+                    required >
+
+                </div>
+
+                <div>
+
+                    <label for="new-price"><strong>New Price (Eur)</strong></label>
+                    <input class="input"
+                    type="number"
+                    name="new-price"
+                    id="new-price"
+                    placeholder="50"
+                    min="1"
+                    max="100"
+                    required >
+
+                </div>
+
+            </div>
+
+            <label for="video-length"><strong>Video Length</strong></label>
+            <div id="video-length-wrap">
+                <div>
+                    <input class="input"
+                    type="number"
+                    name="video-length"
+                    id="video-length"
+                    placeholder="250"
+                    min="1"
+                    max="500"
+                    required >
+                </div>
+                <div><span>minutes</span></div>
+            </div>
+
+            <label for="course-type"><strong>Check all that apply:</strong></label>
+
+            <input type="checkbox" name="course-type" value="game"> It's a game<br>
+            <input type="checkbox" name="course-type" value="for-beginners"> It's for beginners<br>
+            <input type="checkbox" name="course-type" value="cc"> It's CC
+
+            <div class="button-wrapper">
+                <button class="primary">Sign Up</button>
+            </div>
+
+        </form>
+
+    </section>
+    
+</body>
+</html>
