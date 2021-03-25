@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body id="login">
+
+    <section class="hero">
+        <div class="container">
+            <div>
+                <a href="#"><img src="img/Google_logo.png"></a>
+                </div> 
+            <div>
+                <button>Login</button> <button class="primary">Sign Up</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="main-title-wrapper">
+                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h1>
+                <p>Earum, consectetur? Quaerat nesciunt iusto hic labore.</p>
+                <div class="button-wrapper">
+                    <button class="primary">Sign Up</button>
+                </div>
+            </div>
+            <div class="main-pic-wrapper"></div>
+        </div> 
+    </section>
+
+    <section class="main">
+        <h1>Login</h1>
+        <div class="notification">Email or password incorrect <div id="close_button"></div></div>
+    
+        <form name="login">
+
+            <label for="email"><strong>Email</strong></label>
+            <input class="input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@email.com"
+            minlength="3"
+            maxlength="255"
+            required >
+
+            <label for="password"><strong>Password</strong></label>
+            <input class="input"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            minlength="8"
+            maxlength="255"
+            required >
+
+            <div class="button-wrapper">
+                <button class="primary">Login</button>
+            </div>
+    
+        </form>
+    
+    </section>
+
+</body>
+</html>

@@ -131,9 +131,49 @@ form[name="add-course"] div.button-wrapper {
 }
 
 #video-length-wrap > div:last-child > span {
-    
     display: block;
-    
+}
+
+.container:nth-child(2) {
+    display: flex;
+    height: 40vh;
+    margin: 1rem 0.9rem 0 0.9rem;
+}
+
+.container .main-title-wrapper {
+    background-color: rgb(2, 17, 17);
+    width: 100%;
+    color: rgb(193, 240, 216);
+    text-align: left;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .main-title-wrapper h1 {
+    color: white;
+}
+
+.container .main-title-wrapper .button-wrapper {
+    text-align: left;
+}
+
+.container .main-title-wrapper .button-wrapper button {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.container .main-pic-wrapper {
+    width: 50%;
+    display: none;
+    background: url(img/skyscraper-city-paris.jpg);
+    background-size: cover; 
+}
+
+#login .hero {
+    border-bottom: 0;
+    padding-bottom: 0;
 }
 
 @media only screen and (min-width: 768px)  {
@@ -167,6 +207,21 @@ form[name="add-course"] div.button-wrapper {
 
     #prices > div:last-child {
         padding-left: 0.25rem;
+    }
+
+    .container:last-child {
+        margin-top: 0;
+    }
+
+    .container .main-pic-wrapper {
+        display: block;
+    }
+    .container .main-title-wrapper {
+        width: 50%;
+    }
+
+    .container:nth-child(2) {
+        margin: 0 auto;
     }
 
 }
