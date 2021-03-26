@@ -55,6 +55,10 @@ margin-bottom: 0.5rem;
 border-radius: 3px;
 }
 
+#courses div.notification {
+    margin-bottom: 1rem; 
+}
+
 #close_button {
     width: 16px;
     height: 16px;
@@ -171,9 +175,63 @@ form[name="add-course"] div.button-wrapper {
     background-size: cover; 
 }
 
-#login .hero {
+#courses .container .main-pic-wrapper {
+    background: url(img/books.jpg); 
+}
+
+#login .hero, #courses .hero {
     border-bottom: 0;
     padding-bottom: 0;
+}
+
+#title_wrapper {
+    margin-bottom: 1rem;
+}
+
+.card {
+    margin-bottom: 2rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin: 0.8rem 0.8rem;
+}
+
+.card div.info {
+    margin: 0 0.8rem; 
+}
+
+.card div.info span {
+    display: inline-block;
+    border: solid #f5f5f5 2px;
+    border-radius: 3px;
+    padding: 0.2rem;
+    font-size: 90%;
+    box-sizing: border-box;
+}
+
+.card div.info span img {
+    width: 13px;
+    height: 13px;
+}
+
+.price-details {
+    margin: 1rem 0.8rem 0 0.8rem; 
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.price-details span:first-child {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.price-details span:last-child {
+    color: red; 
 }
 
 @media only screen and (min-width: 768px)  {
@@ -183,6 +241,10 @@ form[name="add-course"] div.button-wrapper {
         margin: 0 auto;
     }
 
+    #courses section.main {
+        max-width: 1024px; 
+    }
+
     .hero {
         padding-top: 0.9rem;
     }
@@ -190,7 +252,7 @@ form[name="add-course"] div.button-wrapper {
     div.container {
         max-width: 1024px;
         margin: 0 auto;
-        display:flex;
+        display: flex;
         justify-content: space-between; 
     }
 
@@ -222,6 +284,31 @@ form[name="add-course"] div.button-wrapper {
 
     .container:nth-child(2) {
         margin: 0 auto;
+    }
+
+    #title_wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    #title_wrapper h1, #title_wrapper input {
+        width: 50%;
+    }
+
+    #courses section.main div.button-wrapper {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    #cards_wrapper {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 24%;
     }
 
 }
