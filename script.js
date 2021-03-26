@@ -52,6 +52,14 @@ function coursesHTML(data, cardsWrapper) {
     cardsWrapper.innerHTML = html;
 }
 
+function loggedInRedir() {
+    const userid = localStorage.getItem("id");
+    if (userid) {
+        showMsg("You are already logged-in. Redirecting to dashboard.");
+        setTimeout(()=>{window.location.replace("courses.html")}, 2000);
+    }
+}
+
 if (closeButton) {
     closeButton.addEventListener("click", () => notification.parentNode.style.display = "none");
 }
@@ -86,6 +94,7 @@ if (downButton) {
 }
 
 if (signUpForm) {
+    loggedInRedir();
     signUpForm.addEventListener("submit", (e) => {
         e.preventDefault();
         const email = signUpForm.elements.email.value.trim();
@@ -112,6 +121,7 @@ if (signUpForm) {
 }
 
 if (loginForm) {
+    loggedInRedir();
     loginForm.addEventListener("submit", (e) => {
         e.preventDefault(); 
         const email = loginForm.elements.email.value.trim();
