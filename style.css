@@ -116,7 +116,7 @@ form[name="add-course"] div.button-wrapper {
     display: flex;
 }
 
-#video-length {
+#duration {
     border: 0;
 }
 
@@ -193,8 +193,9 @@ form[name="add-course"] div.button-wrapper {
     margin-bottom: 2rem;
 }
 
-.card img {
-    width: 100%;
+.card .img-bkg {
+    height: 200px;
+    
 }
 
 .card h2 {
@@ -297,8 +298,13 @@ form[name="add-course"] div.button-wrapper {
         margin-bottom: 0;
     }
 
-    #title_wrapper h1, #title_wrapper input {
+    #title_wrapper h1 {
         width: 50%;
+    }
+
+    #title_wrapper input {
+        width: 49.5%;
+        margin-left: 0.5%;
     }
 
     #courses section.main div.button-wrapper {
@@ -306,7 +312,7 @@ form[name="add-course"] div.button-wrapper {
         margin-bottom: 1.5rem;
     }
 
-    #cards_wrapper {
+    #cards-wrapper {
         display: flex;
         flex-wrap:wrap;
         justify-content: space-between;
@@ -314,6 +320,10 @@ form[name="add-course"] div.button-wrapper {
 
     .card {
         width: 24%;
+    }
+
+    #courses h1 {
+        margin-top: 1rem;
     }
 
 }

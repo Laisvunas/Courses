@@ -26,7 +26,7 @@
                 <a href="#"><img src="img/Google_logo.png"></a>
                 </div> 
             <div>
-                <button>Add</button> <button class="primary" id="logout-button">Log Out</button>
+                <button id="add-button">Add</button> <button class="primary" id="logout-button">Log Out</button>
             </div>
         </div>
         <div class="container">
@@ -34,7 +34,7 @@
                 <h1>Lorem ipsum dolor sit, amet consectetur adipisicing</h1>
                 <p>Earum, consectetur? Quaerat nesciunt iusto hic labore.</p>
                 <div class="button-wrapper">
-                    <button class="primary">Go Down</button>
+                    <button class="primary" id="down-button">Go Down</button>
                 </div>
             </div>
             <div class="main-pic-wrapper"></div>
@@ -42,185 +42,31 @@
     </section>
 
     <section class="main">
-        <div id="title_wrapper">
-            <h1>Your Courses</h1>
-            <input class="input"
-                type="text"
-                name="course-name"
-                id="course-name"
-                placeholder="Search"
-                minlength="3"
-                maxlength="255"
-                required >
-        </div>
+        <form name="titlesearch">
+            <div id="title_wrapper">
+                <h1>Your Courses</h1>
+                
+                    <input class="input"
+                        type="text"
+                        name="title"
+                        id="title"
+                        placeholder="Search"
+                        minlength="3"
+                        maxlength="255"
+                        required >
+                
+            </div>
+        </form>
         <div class="notification"><span></span> <div id="close-button"></div></div>
 
-        <div id="cards_wrapper">
+        <div id="cards-wrapper">
 
-            <div class="card">
-
-                <img src="img/gallery.jpg">
-
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h2>
-
-                <div class="info">
-                    <span><img src="img/gamepad2.png"></span>
-                    <span>2h 58min</span>
-                    <span>Beginner</span>
-                    <span>CC</span>
-                </div>
-
-                <div class="price-details">
-                    <span>&euro;50</span>
-                    <span>&euro;37</span>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="img/gallery.jpg">
-
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h2>
-
-                <div class="info">
-                    <span><img src="img/gamepad2.png"></span>
-                    <span>2h 58min</span>
-                    <span>Beginner</span>
-                    <span>CC</span>
-                </div>
-
-                <div class="price-details">
-                    <span>&euro;50</span>
-                    <span>&euro;37</span>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="img/gallery.jpg">
-
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h2>
-
-                <div class="info">
-                    <span><img src="img/gamepad2.png"></span>
-                    <span>2h 58min</span>
-                    <span>Beginner</span>
-                    <span>CC</span>
-                </div>
-
-                <div class="price-details">
-                    <span>&euro;50</span>
-                    <span>&euro;37</span>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="img/gallery.jpg">
-
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h2>
-
-                <div class="info">
-                    <span><img src="img/gamepad2.png"></span>
-                    <span>2h 58min</span>
-                    <span>Beginner</span>
-                    <span>CC</span>
-                </div>
-
-                <div class="price-details">
-                    <span>&euro;50</span>
-                    <span>&euro;37</span>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="img/gallery.jpg">
-
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h2>
-
-                <div class="info">
-                    <span><img src="img/gamepad2.png"></span>
-                    <span>2h 58min</span>
-                    <span>Beginner</span>
-                    <span>CC</span>
-                </div>
-
-                <div class="price-details">
-                    <span>&euro;50</span>
-                    <span>&euro;37</span>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="img/gallery.jpg">
-
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h2>
-
-                <div class="info">
-                    <span><img src="img/gamepad2.png"></span>
-                    <span>2h 58min</span>
-                    <span>Beginner</span>
-                    <span>CC</span>
-                </div>
-
-                <div class="price-details">
-                    <span>&euro;50</span>
-                    <span>&euro;37</span>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="img/gallery.jpg">
-
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h2>
-
-                <div class="info">
-                    <span><img src="img/gamepad2.png"></span>
-                    <span>2h 58min</span>
-                    <span>Beginner</span>
-                    <span>CC</span>
-                </div>
-
-                <div class="price-details">
-                    <span>&euro;50</span>
-                    <span>&euro;37</span>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-                <img src="img/gallery.jpg">
-
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h2>
-
-                <div class="info">
-                    <span><img src="img/gamepad2.png"></span>
-                    <span>2h 58min</span>
-                    <span>Beginner</span>
-                    <span>CC</span>
-                </div>
-
-                <div class="price-details">
-                    <span>&euro;50</span>
-                    <span>&euro;37</span>
-                </div>
-
-            </div>
+            
 
         </div>
 
         <div class="button-wrapper">
-            <button class="primary">All courses</button>
+            <button class="primary" id="all-courses-button">All courses</button>
         </div>
 
     </section>
