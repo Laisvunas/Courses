@@ -17,6 +17,8 @@
     />
     <link href="style.css" rel="stylesheet">
 
+    <script src="script.js" defer></script>
+
 </head>
 <body>
 
@@ -26,14 +28,14 @@
                 <a href="#"><img src="img/Google_logo.png"></a>
                 </div> 
             <div>
-                <button>Login</button> <button class="primary">Sign Up</button>
+                <button id="login-button">Login</button> <button class="primary" id="signup-button">Sign Up</button>
             </div>
         </div> 
     </section>
 
     <section class="main">
         <h1>Sign Up</h1>
-        <div class="notification">Email or password incorrect <div id="close_button"></div></div>
+        <div class="notification"><span></span> <div id="close-button"></div></div>
 
         <form name="signup">
 

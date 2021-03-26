@@ -39,7 +39,7 @@ button.primary {
 h1 {
     color: #48c78e;
     font-weight: normal;
-    margin: 1rem 0;
+    margin: 1.8rem 0 1rem 0;
     font-size: 1.5rem
 }
 
@@ -53,13 +53,14 @@ padding: 1.5rem;
 position: relative;
 margin-bottom: 0.5rem;
 border-radius: 3px;
+display: none;
 }
 
 #courses div.notification {
     margin-bottom: 1rem; 
 }
 
-#close_button {
+#close-button {
     width: 16px;
     height: 16px;
     position: absolute;
@@ -254,6 +255,10 @@ form[name="add-course"] div.button-wrapper {
         margin: 0 auto;
         display: flex;
         justify-content: space-between; 
+    }
+
+    #courses div.container {
+        max-width: 1200px;
     }
 
     #prices {

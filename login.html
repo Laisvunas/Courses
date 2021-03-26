@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
     <link href="style.css" rel="stylesheet">
-
+    <script src="script.js" defer></script>
 </head>
 <body id="login">
 
@@ -26,7 +26,7 @@
                 <a href="#"><img src="img/Google_logo.png"></a>
                 </div> 
             <div>
-                <button>Login</button> <button class="primary">Sign Up</button>
+                <button id="login-button">Login</button> <button class="primary" id="signup-button">Sign Up</button>
             </div>
         </div>
         <div class="container">
@@ -34,7 +34,7 @@
                 <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h1>
                 <p>Earum, consectetur? Quaerat nesciunt iusto hic labore.</p>
                 <div class="button-wrapper">
-                    <button class="primary">Sign Up</button>
+                    <button class="primary" id="signup-button2">Sign Up</button>
                 </div>
             </div>
             <div class="main-pic-wrapper"></div>
@@ -43,7 +43,7 @@
 
     <section class="main">
         <h1>Login</h1>
-        <div class="notification">Email or password incorrect <div id="close_button"></div></div>
+        <div class="notification"><span></span> <div id="close-button"></div></div>
     
         <form name="login">
 

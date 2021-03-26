@@ -16,6 +16,7 @@
       crossorigin="anonymous"
     />
     <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -25,7 +26,7 @@
                 <a href="#"><img src="img/Google_logo.png"></a>
                 </div> 
             <div>
-                <button>Dashboard</button> <button class="primary">Logout</button>
+                <button id="courses-button">Dashboard</button> <button class="primary" id="logout-button">Logout</button>
             </div>
         </div> 
     </section>
@@ -33,15 +34,15 @@
     <section class="main">
 
         <h1>Add a Course</h1>
-        <div class="notification">Your course has been added successfully <div id="close_button"></div></div>
+        <div class="notification"><span></span> <div id="close-button"></div></div>
 
-        <form name="add-course">
+        <form name="addcourse">
 
-            <label for="email"><strong>Course Name</strong></label>
+            <label for="title"><strong>Course Name</strong></label>
             <input class="input"
             type="text"
-            name="course-name"
-            id="course-name"
+            name="title"
+            id="title"
             placeholder="Something coool"
             minlength="3"
             maxlength="255"
@@ -59,11 +60,11 @@
 
                 <div>
 
-                    <label for="old-price"><strong>Old Price (Eur)</strong></label>
+                    <label for="oldprice"><strong>Old Price (Eur)</strong></label>
                     <input class="input"
                     type="number"
-                    name="old-price"
-                    id="old-price"
+                    name="oldprice"
+                    id="oldprice"
                     placeholder="50"
                     min="1"
                     max="100"
@@ -73,11 +74,11 @@
 
                 <div>
 
-                    <label for="new-price"><strong>New Price (Eur)</strong></label>
+                    <label for="newprice"><strong>New Price (Eur)</strong></label>
                     <input class="input"
                     type="number"
-                    name="new-price"
-                    id="new-price"
+                    name="newprice"
+                    id="newprice"
                     placeholder="50"
                     min="1"
                     max="100"
@@ -87,13 +88,13 @@
 
             </div>
 
-            <label for="video-length"><strong>Video Length</strong></label>
+            <label for="duration"><strong>Video Length</strong></label>
             <div id="video-length-wrap">
                 <div>
                     <input class="input"
                     type="number"
-                    name="video-length"
-                    id="video-length"
+                    name="duration"
+                    id="duration"
                     placeholder="250"
                     min="1"
                     max="500"
@@ -104,9 +105,9 @@
 
             <label for="course-type"><strong>Check all that apply:</strong></label>
 
-            <input type="checkbox" name="course-type" value="game"> It's a game<br>
-            <input type="checkbox" name="course-type" value="for-beginners"> It's for beginners<br>
-            <input type="checkbox" name="course-type" value="cc"> It's CC
+            <input type="checkbox" name="game"> It's a game<br>
+            <input type="checkbox" name="beginner"> It's for beginners<br>
+            <input type="checkbox" name="cc"> It's CC
 
             <div class="button-wrapper">
                 <button class="primary">Add</button>
