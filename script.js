@@ -207,7 +207,7 @@ if (document.body.getAttribute("id") == "courses") {
             coursesHTML(data, cardsWrapper);
         } 
         else {
-            showMsg("Loading of cources failed.");
+            showMsg("You have no courses.");
         }
     });  
 }
